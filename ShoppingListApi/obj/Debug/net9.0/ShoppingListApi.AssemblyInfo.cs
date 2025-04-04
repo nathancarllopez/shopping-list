@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShoppingListApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80fe78b443158708f8408226ea55d2b1fdbbd3b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+947513661f89ebb38d4b13b8b258e93f92aef544")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShoppingListApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShoppingListApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
