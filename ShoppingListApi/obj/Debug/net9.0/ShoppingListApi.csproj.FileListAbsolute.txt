@@ -32,3 +32,16 @@
 /Users/danger/repos/shopping-list/ShoppingListApi/obj/Debug/net9.0/ShoppingListApi.pdb
 /Users/danger/repos/shopping-list/ShoppingListApi/obj/Debug/net9.0/ShoppingListApi.genruntimeconfig.cache
 /Users/danger/repos/shopping-list/ShoppingListApi/obj/Debug/net9.0/ref/ShoppingListApi.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/Namotion.Reflection.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/Newtonsoft.Json.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NJsonSchema.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NJsonSchema.Annotations.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NJsonSchema.NewtonsoftJson.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NJsonSchema.Yaml.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NSwag.Annotations.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NSwag.AspNetCore.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NSwag.Core.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NSwag.Core.Yaml.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NSwag.Generation.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/NSwag.Generation.AspNetCore.dll
+/Users/danger/repos/shopping-list/ShoppingListApi/bin/Debug/net9.0/YamlDotNet.dll
