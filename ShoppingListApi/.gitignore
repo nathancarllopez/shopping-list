@@ -3,6 +3,9 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+# My files
+scratch.cs
+
 # dotenv files
 .env
 
