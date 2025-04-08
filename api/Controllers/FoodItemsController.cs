@@ -59,7 +59,10 @@ namespace ShoppingListApi.Controllers
             }
 
             foodItem.Name = foodDTO.Name;
+            foodItem.Store = foodDTO.Store;
+            foodItem.Price = foodDTO.Price;
             foodItem.Quantity = foodDTO.Quantity;
+            foodItem.Tags = foodDTO.Tags;
 
             try
             {
@@ -77,10 +80,18 @@ namespace ShoppingListApi.Controllers
         [HttpPost]
         public async Task<ActionResult<FoodItemDTO>> PostFoodItem(FoodItemDTO foodDTO)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var foodItem = new FoodItem
             {
                 Name = foodDTO.Name,
-                Quantity = foodDTO.Quantity
+                Store = foodDTO.Store,
+                Price = foodDTO.Price,
+                Quantity = foodDTO.Quantity,
+                Tags = foodDTO.Tags
             };
 
             _context.FoodItems.Add(foodItem);
@@ -114,7 +125,10 @@ namespace ShoppingListApi.Controllers
         {
             Id = foodItem.Id,
             Name = foodItem.Name,
-            Quantity = foodItem.Quantity
+            Store = foodItem.Store,
+            Price = foodItem.Price,
+            Quantity = foodItem.Quantity,
+            Tags = foodItem.Tags
         };
     }
 }
