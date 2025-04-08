@@ -1,0 +1,26 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "Shopping list made with React and ASP.NET",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "dotnet run --project ./api --launch-profile https",
+    "front-end": "npm --prefix ./front-end run dev",
+    "start": "concurrently \"npm run api\" \"npm run front-end\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathancarllopez/shopping-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathancarllopez/shopping-list/issues"
+  },
+  "homepage": "https://github.com/nathancarllopez/shopping-list#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

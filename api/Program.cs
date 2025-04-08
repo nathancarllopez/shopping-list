@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using ShoppingListApi.Models;
+using ShoppingListApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,13 @@ builder.Services.AddDbContext<FoodItemContext>(opt =>
     opt.UseInMemoryDatabase("FoodItem"));
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<FoodItemContext>();
+    DbInitializer.Initialize(context);
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
