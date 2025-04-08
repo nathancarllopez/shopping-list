@@ -4,10 +4,7 @@ using ShoppingListApi.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddDbContext<FoodItemContext>(opt =>
     opt.UseInMemoryDatabase("FoodItem"));
@@ -23,7 +20,6 @@ using (var scope = app.Services.CreateScope())
     DbInitializer.Initialize(context);
 }
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();

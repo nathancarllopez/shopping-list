@@ -29,7 +29,7 @@ namespace ShoppingListApi.Controllers
                 .ToListAsync();
         }
 
-        // GET: api/FoodItems/5
+        // GET: api/FoodItems/{id}
         [HttpGet("{id}")]
         public async Task<ActionResult<FoodItemDTO>> GetFoodItem(long id)
         {
@@ -43,8 +43,7 @@ namespace ShoppingListApi.Controllers
             return ItemToDTO(foodItem);
         }
 
-        // PUT: api/FoodItems/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // PUT: api/FoodItems/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> PutFoodItem(long id, FoodItemDTO foodDTO)
         {
@@ -62,8 +61,6 @@ namespace ShoppingListApi.Controllers
             foodItem.Name = foodDTO.Name;
             foodItem.Quantity = foodDTO.Quantity;
 
-            // _context.Entry(foodItem).State = EntityState.Modified;
-
             try
             {
                 await _context.SaveChangesAsync();
@@ -77,7 +74,6 @@ namespace ShoppingListApi.Controllers
         }
 
         // POST: api/FoodItems
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<FoodItemDTO>> PostFoodItem(FoodItemDTO foodDTO)
         {
