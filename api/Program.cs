@@ -14,6 +14,8 @@ builder.Services.AddDbContext<FoodItemContext>(opt =>
 
 var app = builder.Build();
 
+app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
